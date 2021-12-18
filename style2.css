@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+body{
+    background-image: url(background.jpg) ;
+    background-size: cover;
+   
+    align-items: center;
+    justify-content: center;
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.24);
+    position: absolute ;
+}
+.navbar ul{
+   
+    margin: 0;
+    padding: 0;
+    display: flex;
+    float: right;
+   
+    
+    
+}
+.navbar ul li{
+    margin: 30px;
+    list-style: none;
+    font-size: 20px;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 230, 230);
+    font-weight: 600;
+    position: relative;
+}
+.navbar ul li a::after{
+    content: '';
+    position: absolute;
+    background: orange;
+    width: 0;
+    height: 3px;
+    bottom: -7px;
+    left: 0;
+
+    transition:.5s ease;
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+   
+}
+.navbar ul li a:hover{
+    color: orange;
+    transition: 1s;
+}
+
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+.content .text{
+    font-size: 80px;
+    color: rgb(255, 230, 230);
+}
+span{
+    color: orange;
+    
+  
+}
+p{
+    color: rgb(255, 230, 230);
+    font-size: 22px;
+    margin: 30px;
+    font-weight: 600;
+}
+.header{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+.header h4{
+    font-size: 90px;
+    color: rgb(255, 230, 230);
+}
+img{
+    width: 70px;
+    height: 60px;
+    border-radius: 30px;
+    display: block;
+   
+}
+
+.div{
+    position: absolute;
+    top: 60%;
+    left: 30%;
+
+
+}
+.social-links{
+    gap: 35px;
+    display: flex;
+    color: white;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.social-links li{
+    background: white;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px #4442;
+    cursor: pointer;
+    width: 60px;
+    transition: 0.5s ease-in-out;
+}
+.social-links li:hover{
+    border-radius: 20px;
+    width: 240px;
+    box-shadow: 0 4px 6px #4442, 0 4px 20px #4442;
+
+}
+.social-links li .text{
+    display: block;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.facebook .text{
+    color: rgb(0, 110, 255);
+}
+.whattsapp .text{
+    color: green;
+}
+.youtube .text{
+    color: rgb(243, 99, 42);
+}
+.instagram .text{
+    color: rgb(247, 123, 21);
+}
+.close-icon{
+    position:fixed ;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 4px;
+    left: -200px;
+    top: 20px;
+    z-index: 1111;
+    transition: all 0.4s ease;
+
+}
+.close-icon::before, .close-icon::after{
+    position: absolute;
+    left: 20px;
+    content: '';
+    height: 20px;
+    width: 4px;
+    background-color: white;
+    margin-left:-7px;
+    margin-top: 4px;
+
+}
+.close-icon::before{
+    transform: rotate(45deg);
+}
+.close-icon::after{
+    transform: rotate(-45deg);
+}
+.menu-icon{
+    margin-left: 300px;
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    height: 38px;
+    background: black;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    
+}
+.menu-icon div{
+    width: 23px;
+    height: 4px;
+    background-color:white;
+    margin: -5px;
+    border-radius: 4px;
+    margin-left: 8px;
+    margin-top: 9px;
+    
+
+}
+
+body{
+  
+    font-family:'robato',sans-serif;
+   
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    background:rgba(0, 0, 0, 0.815);
+    height: 100%;
+    left: 500px;
+    width: 250px;
+    position: fixed;
+    z-index: 11;
+    display: none;
+    
+    transition: all 0.5s ease;
+}
+.wrapper ul li{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(95, 88, 88);
+    border-bottom: 1px solid rgb(26, 19, 19);
+    padding-left: 40px;
+    list-style: none;
+    
+    
+    
+}
+
+.wrapper ul li a{
+    color: orange;
+    line-height: 65px;
+    font-size: 20px;
+    text-decoration: none;
+  
+}
+.wrapper h3{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: rgba(71, 67, 67, 0.521);
+  
+    
+}
+.wrapper ul li:hover{
+    padding-left: 50px;
+    transition: .4s;
+    
+}
+.wrapper ul li a:hover{
+    color: white;
+    transition: .4s;
+}
+
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+
+}
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+}
+#check:checked ~ .wrapper{
+    left: 140px;
+    display: block;
+}
+#check:checked ~ label #btn{
+    left: 300px;
+    margin-left: 300px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 147px;
+    margin-top: 5px;
+    
+   
+   
+}
+.cover img{
+    width: 450px;
+    height: 350px;
+    border-radius: 0;
+}
+.cover{
+    position: absolute;
+    top: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media quaries starts here*/
+
+@media (max-width:720px) {
+    
+    .navbar ul{
+        display: none;
+    }
+    .menu-icon{
+       
+        display: block;
+        z-index: 1111;
+       margin-left: 280px;
+        
+    }
+    body{
+        background: black;
+    }
+    .listen{
+        position: absolute;
+        left: 40%;
+        top: 30%;
+        display: flex;
+        
+        width: 400px;
+        height: 100px;
+        
+        
+    }
+    .wrapper{
+        display: block;
+    }
+    .navbar{
+        background:rgba(255, 166, 0, 0.514);
+        width: 100%;
+
+    }
+    .header h4{
+        font-size: 60px;
+        text-align: center;
+    }
+    .header{
+        margin-right: 110px;
+        margin-left: -70px;
+    }
+    .div {
+        left: 7%;
+    }
+    .div .social-links ul{
+        display:grid ;
+    }
+    
+
+}

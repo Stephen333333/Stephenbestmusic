@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+body{
+    background-image: url(background.jpg) ;
+    background-size: cover;
+    
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.336);
+    
+    position: absolute ;
+}
+.navbar ul{
+   
+    margin: 0;
+    padding: 0;
+    display: flex;
+    float: right;
+   
+    
+    
+}
+.navbar ul li{
+    margin: 30px;
+    list-style: none;
+    font-size: 20px;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 230, 230);
+    font-weight: 600;
+    position: relative;
+}
+.navbar ul li a::after{
+    content: '';
+    position: absolute;
+    background: orange;
+    width: 0;
+    height: 3px;
+    bottom: -7px;
+    left: 0;
+
+    transition:.5s ease;
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+   
+}
+.navbar ul li a:hover{
+    color: orange;
+    transition: 1s;
+}
+
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+.content .text{
+    font-size: 80px;
+    color: rgb(255, 230, 230);
+    
+}
+span{
+    color: orange;
+    
+  
+}
+p{
+    color: rgb(255, 230, 230);
+    font-size: 22px;
+    margin: 30px;
+    font-weight: 600;
+}
+.listen{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    display: flex;
+    
+    width: 400px;
+    height: 100px;
+    
+}
+img{
+    position: absolute;
+    left: 250px;
+    width: 45px;
+    height: 45px;
+    border-radius: 23px;
+
+
+}
+
+.listen-now{
+    position: absolute;
+    color: rgb(255, 230, 230);
+    font-size: 17px;
+   
+}
+
+video{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 630px;
+    height: 300px;
+    
+}
+.lyris{
+    position: absolute;
+    top: 70%;
+}
+
+
+
+.lyris p{
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+    line-height: 22px;
+}
+
+/* menu side bar stop here*/
+
+.close-icon{
+    position:fixed ;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 4px;
+    left: -200px;
+    top: 20px;
+    z-index: 1111;
+    transition: all 0.4s ease;
+
+}
+.close-icon::before, .close-icon::after{
+    position: absolute;
+    left: 20px;
+    content: '';
+    height: 20px;
+    width: 4px;
+    background-color: white;
+    margin-left:-7px;
+    margin-top: 4px;
+
+}
+.close-icon::before{
+    transform: rotate(45deg);
+}
+.close-icon::after{
+    transform: rotate(-45deg);
+}
+.menu-icon{
+    margin-left: 300px;
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    height: 38px;
+    background: black;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    
+}
+.menu-icon div{
+    width: 23px;
+    height: 4px;
+    background-color:white;
+    margin: -5px;
+    border-radius: 4px;
+    margin-left: 8px;
+    margin-top: 9px;
+    
+
+}
+
+body{
+  
+    font-family:'robato',sans-serif;
+   
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    background:rgba(0, 0, 0, 0.815);
+    height: 100%;
+    left: 500px;
+    width: 250px;
+    position: fixed;
+    z-index: 11;
+    display: none;
+    
+    transition: all 0.5s ease;
+}
+.wrapper ul li{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(95, 88, 88);
+    border-bottom: 1px solid rgb(26, 19, 19);
+    padding-left: 40px;
+    list-style: none;
+    
+    
+    
+}
+
+.wrapper ul li a{
+    color: orange;
+    line-height: 65px;
+    font-size: 20px;
+    text-decoration: none;
+  
+}
+.wrapper h3{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: rgba(71, 67, 67, 0.521);
+  
+    
+}
+.wrapper ul li:hover{
+    padding-left: 50px;
+    transition: .4s;
+    
+}
+.wrapper ul li a:hover{
+    color: white;
+    transition: .4s;
+}
+
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+
+}
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+}
+#check:checked ~ .wrapper{
+    left: 140px;
+    display: block;
+}
+#check:checked ~ label #btn{
+    left: 300px;
+    margin-left: 300px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 147px;
+    margin-top: 5px;
+    
+   
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+/*media quaries starts here*/
+
+@media (max-width:720px) {
+    .navbar ul{
+        display: none;
+    }
+    .menu-icon{
+       
+        display: block;
+        z-index: 1111;
+       margin-left: 280px;
+        
+    }
+    body{
+        background: black;
+    }
+    .listen{
+        position: absolute;
+        left: 40%;
+        top: 30%;
+        display: flex;
+        
+        width: 400px;
+        height: 100px;
+        
+        
+    }
+    .wrapper{
+        display: block;
+    }
+    .navbar{
+        background:rgba(255, 166, 0, 0.514);
+        width: 100%;
+
+    }
+    .content{
+       position: absolute;
+       right: 50px;
+       
+       
+
+
+    }
+    .content .text{
+        font-size: 60px;
+        color: rgb(255, 230, 230);
+        
+    }
+    .listen{
+        position: absolute;
+        left: -4px;
+        top: 300px;
+        display: flex;
+        width: 400px;
+        height: 100px;
+        
+    }
+    img{
+        position: absolute;
+        left: 80px;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        bottom: 40px;
+    
+    
+    }
+    
+    .listen-now{
+        position: absolute;
+        color: rgb(255, 230, 230);
+        font-size: 17px;
+        top: 40px;
+       
+    }
+    .lyris{
+        position: absolute;
+        top: 60%;
+        height: 200px;
+        
+        overflow-x: scroll;
+    }
+    .lyris p{
+        font-size: 17px;
+        line-height: auto;
+        color: white;
+        text-align: center;
+        justify-content: center;
+       
+    }
+    video{
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: 380px;
+        height: 280px;
+        
+    }
+   
+ 
+  
+    
+   
+   
+
+
+
+
+  
+    
+}

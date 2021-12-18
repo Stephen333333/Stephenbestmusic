@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="menu-icon" id="btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </i>
+            <i>
+                <nav id="cancel" class="close-icon"></nav>
+            </i>
+        </label>
+        <div class="wrapper">
+            <h3>MENU</h3>
+            <ul>
+                <li><a href="index.html" >home</a></li>
+                <li><a href="video.html">video</a></li>
+                <li><a href="music-info.html">music info</a></li>
+                <li><a href="listen-on.html">listen on</a></li>
+               
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html" >home</a></li>
+                <li><a href="video.html">video</a></li>
+                <li><a href="music-info.html">music info</a></li>
+                <li><a href="listen-on.html">listen on</a></li>
+               
+            </ul>
+            <p><span>STEP</span>MUSIC</p>
+        </div>
+        <div class="content">
+            <div class="text">
+                <h2>feel <br> the  beat</h2>
+
+            </div>
+            <div class="listen">
+                <img src="play.jpg" alt="play" id="icon">
+                <p class="listen-now">listen to stephen best song</p>
+              
+            </div>
+        </div>
+    </div>
+        <audio id="music">
+            <source src="music.mp3" type="audio/mp3">
+        </audio>
+    <script>
+        var music = document.getElementById('music');
+        var icon = document.getElementById('icon');
+        
+        icon.onclick = function(){
+           if (music.paused) {
+               music.play();
+               icon.src = 'pause.jpg';
+
+               
+           } else {
+            music.pause();
+               icon.src = 'play.jpg';
+               
+           }
+        }
+
+    </script>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
